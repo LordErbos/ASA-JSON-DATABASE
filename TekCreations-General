@@ -1,3 +1,11 @@
 {
-"enable-loot": false
+"enable-UI": True,
+"enable-loot": false,
+"enable-harvest": True,
+"enable-abilities": false,
+"enable-tekspawn": True,
+"enable-hexaspawn": false,
+"enable-tekgram": false
+"statsmulti-normal": 1,
+"statsmulti-alpha": 10
 }
