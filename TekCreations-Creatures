@@ -4,9 +4,12 @@
 "creature-id": "Tek Raptor",
 "spawnbp":["normal","alpha"],
 "triggers":["Raptor, true, string, 0.05, 0.1"],
-"lootdrops": ["ChibiTekRaptorBP, true, 1-1, 0-0, 0"]
+"lootdrops": ["ChibiTekRaptorBP, true, 1-1, 0-0, 0"],
 "harvest-add": [],
-
+"statsmulti": 1,
+"drop-chance": 0.3,
+"unique-part": ["Head","Small AI Core","Arms","Talons","Legs","Tail"]
+"ChibiExpBase": 35,
 }
 ]
 }
