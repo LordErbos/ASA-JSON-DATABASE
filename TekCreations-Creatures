@@ -1,1 +1,12 @@
+{
+"database":[
+{
+"creature-id": "Tek Raptor",
+"spawnbp":["normal","alpha"],
+"triggers":["Raptor, true, string, 0.05, 0.1"],
+"lootdrops": ["ChibiTekRaptorBP, true, 1-1, 0-0, 0"]
+"harvest-add": [],
 
+}
+]
+}
