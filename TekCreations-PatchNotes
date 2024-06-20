@@ -1,0 +1,49 @@
+Version 0.0.5
+
+[Tek Creations UI]
+  • Re-rework Tek Creations UI
+  • Accessing  Tek Creatures UI is now done via button in player inventory.
+  • Admin Edit Mode - Button at the top right that has a star when enabled allows to edit admin only settings.
+  • OLD TEK CREATURE SETTINGS PAGE(Being dismantled and improved with it original contents being moved to other locations)
+  • First stages of implimenting a json read system to provide notes and such in the Tek Creations UI's Patch Notes and Issues, as well in being able to edit defaults on the fly(Spawning, harvesting, loot). (This is an example of that, requires internet connection)
+  • Spawning System can now utilize multiple Teks using the same triggers, if a tek creature passes a spawn check it will be added to a array then pulled at random.   
+  • Spawn Chance for Normal and Alphas being move to Triggers and will now be per trigger editable.
+  • No longer needs the time out function to prevent UI lock.
+
+[Tek Creatures]
+   - Added Creatures -
+      • Tek Enforcer (Normal and Alpha)
+      • Tek Scout (Normal and Alpha)
+
+[Bug Fixes]
+  • Clients in different languages couldn't save settings when editing.
+  • Grinding Multiplier no longer affects certain weapons and player hand harvesting tek creatures
+
+[Unofficial Other Mod Support]
+  •Omega Lite (Should now be able to spawn with the Tiers/Variants, before my system prevented them from being affected)
+  • Alpha Everything (Should now spawn with the buff correctly)
+
+-------------------------------------------
+
+Version 0.0.0
+• Completely rebuilt UI (50% Complete, Should be functional though)
+• New settings added
+  - Taming Methods
+  - Editable Corpse Harvesting
+  - Chibi drop settings
+  - More spawning related settings
+  - WIP Framework for on the fly Tek Creature loot drops editing. (Non accesable by anyone but me to test things until publicly enabled, Editable Corpse Harvesting is the first workable interation of this)
+• UI can now be disable for radial menu and can be Admin only viewable.
+• Hopefully fixed some graphic issues with teks rendering.
+• Level settings changed, Tek Muliplier is now Alpha Level Multiplier - Can now have Alpha Teks spawn in at higher levels to give a bigger threat.
+• Unofficial mod support for some mods to function with Tek Creatures.
+•  Console Commands added:
+  - admincheat scriptcommand OpenTCUI - opens the Tek Creatures UI
+  - admincheat scriptcommand TekCreation LootSet {Option}
+      ○Option List
+        ◘ None - Disables all loot except trophies from drops, Rex Arms, Alpha drops and such.
+        ◘ Default - My personal created loot drops for the creatures, subject to change over time.
+        ◘ SaveGame - Custom loot system that can be edited during live game. Current WIP and is broken, will only give Riot Boot BP and Wooden Wall Trophy Mount BP.
+        ◘ Config - Will use the Game.Ini file loot edits created by the server owner/admins. (PC edit only and will require a server restart to take effect).
+  - admincheat scriptcommand TekCreation FactoryReset YES - Deletes the SaveGame data for this mod and recreates new, useful for fix missing data from updates. More possible options in the future.
+  - admincheat scriptcommand TekCreation CanTameAlpha True/False - Might be non-functional at this time, WIP and may break things if set to True.
