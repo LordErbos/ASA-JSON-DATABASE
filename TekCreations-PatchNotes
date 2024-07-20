@@ -1,11 +1,11 @@
-Version 0.0.5
-HELLO PEEPS
+Version 0.0.5 - The Chaotic Update (aka I did a opsie update)
+
 [Tek Creations UI]
-  • Re-rework Tek Creations UI
+  • Re-reworkedededededed Tek Creations UI
   • Accessing  Tek Creatures UI is now done via button in player inventory.
   • Admin Edit Mode - Button at the top right that has a star when enabled allows to edit admin only settings.
   • OLD TEK CREATURE SETTINGS PAGE(Being dismantled and improved with it original contents being moved to other locations)
-  • First stages of implimenting a json read system to provide notes and such in the Tek Creations UI's Patch Notes and Issues, as well in being able to edit defaults on the fly(Spawning, harvesting, loot). (This is an example of that, requires internet connection)
+  • (Not work correctly since WC changed some things )First stages of implimenting a json read system to provide notes and such in the Tek Creations UI's Patch Notes and Issues, as well in being able to edit defaults on the fly(Spawning, harvesting, loot). (This is an example of that, requires internet connection)
   • Spawning System can now utilize multiple Teks using the same triggers, if a tek creature passes a spawn check it will be added to a array then pulled at random.   
   • Spawn Chance for Normal and Alphas being move to Triggers and will now be per trigger editable.
   • No longer needs the time out function to prevent UI lock.
@@ -13,11 +13,22 @@ HELLO PEEPS
 [Tek Creatures]
    - Added Creatures -
       • Tek Enforcer (Normal and Alpha)
-      • Tek Scout (Normal and Alpha)
+      • Tek Scout (Normal and Alpha) - Disabled for the time being
+
+[Tek Structures]
+   - Added Structure
+      • Tek Crop Generator - add seeds to it to passively generate crops every 30 minutes. (UI Timer currently bugged atm, but still works)
+
+[Feature Additions/Changes]
+      • Loot Drop System is now active, some issues but functional
+      • Triggers tab for creatures now has better look, new system still being tweaked but like how its turning out so far.
+      • Dynamic detecting other Tek type creatures from other mods. *NOTICE* I have disabled this for the moment, due to causing server loops on nitrado when paired with Zytharians Critters - Tek Collection.
 
 [Bug Fixes]
   • Clients in different languages couldn't save settings when editing.
   • Grinding Multiplier no longer affects certain weapons and player hand harvesting tek creatures
+  • Tek Giga Fertilized Egg should now be transferable via cluster.
+
 
 [Unofficial Other Mod Support]
   •Omega Lite (Should now be able to spawn with the Tiers/Variants, before my system prevented them from being affected)
@@ -47,8 +58,3 @@ Version 0.0.0
         ◘ Config - Will use the Game.Ini file loot edits created by the server owner/admins. (PC edit only and will require a server restart to take effect).
   - admincheat scriptcommand TekCreation FactoryReset YES - Deletes the SaveGame data for this mod and recreates new, useful for fix missing data from updates. More possible options in the future.
   - admincheat scriptcommand TekCreation CanTameAlpha True/False - Might be non-functional at this time, WIP and may break things if set to True.
-
-[GetThis]
-Value01= 666
-[GetThat]
-Value01= 666
